@@ -1,0 +1,44 @@
+
+/* Used https://www.lifewire.com/center-images-with-css-3466389 for help centering the images */
+
+.imageStandard{
+  width: auto;
+  height: 300px;
+}
+
+body{
+  background-color: #FFE4C4;
+}
+
+h1{
+  color: hsla(245,100%,50%,1);
+  font-weight: bold;
+}
+
+h2{
+  color: hsla(245,100%,50%,1);
+  font-size: 25px;
+}
+
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hours{ 
+  text-align: center;
+  font-style: italic;
+}
+
+a:link{
+  color: blueviolet;
+}
+
+a:hover{
+  color: hotpink;
+}
+
+input:focus{
+  background-color: aquamarine;
+}
+
