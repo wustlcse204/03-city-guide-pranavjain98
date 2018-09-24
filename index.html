@@ -9,13 +9,15 @@
 
     <!--Title head-->
     <header>
-        <h1><em>Welcome to the Cuisines of Novi!!!</em></h1>
-        <img src="novi.JPG" class="imageStandard">
-        <p><em>This is a thorough guide to the restaurants wonderful lustorous city of novi! Below are multiple links to multiple cuisines of interest in our great city.</em></p>
+        <p>Navigation: <a href="#pho">Pho Lucky  </a> <a href="#bd">bd's Mongolian Grill  </a> <a href="#turmerican">Turmerican  </a> <a href="#cafe">China Cafe  </a> <a href="#exp">Leave and Experience!  </a></p>
     </header>
 
+    <h1><em>Welcome to the Cuisines of Novi!!!</em></h1>
+    <img src="novi.JPG" class="imageStandard">
+    <p><em>This is a thorough guide to the restaurants wonderful lustorous city of novi! Below are multiple links to multiple cuisines of interest in our great city.</em></p>
+
     <!--Navigation to jump to different pages-->
-    <div id="tableOfContents">
+    <div id="tableOfContents" class="descrip">
         <h2><b>Navigation:</b></h2>
         <nav>
             <ol>
@@ -30,166 +32,164 @@
     <hr/>
 
     <!--Restaurant sections-->
-    <div id="pho">
-        <h2><b>Pho Lucky</b></h2>
-        <img src="pho.jpg" class="imageStandard">
-        <p>A nice very comfy vietnamese style restaurant that is renown for their authentic food.</p>
-        <h3>Hours:</h3>
-        <div class="hours">
-            <p>Monday: 11:00 am to 9:00 pm</p>
-            <p>Tuesday: 11:00 am to 3:00 pm</p>
-            <p>Wednesday: 11:00 am to 9:00 pm</p>
-            <p>Thursday: 11:00 am to 9:00 pm</p>
-            <p>Friday: 11:00 am to 10:00 pm</p>
-            <p>Saturday: 11:00 am to 10:00 pm</p>
-            <p>Sunday: 11:00 am to 9:00 pm</p>
-        </div>
-        <h3>Notable menu items:</h3>
-        <table>
-            <tr>
-                <th>Phở Tái: </th>
-                <th>$8.49</th>
-            </tr>
-            <tr>
-                <th>Chả Giò: </th>
-                <th>$8.49</th>
-            </tr>
-            <tr>
-                <th>Spring rolls: </th>
-                <th>$3.50</th>
-            </tr>
-        </table>
-        <h3>Location:</h3>
-        <!--Code for this was retreived from https://embedgooglemaps.com/en/-->
-        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-        <div style='overflow:hidden;height:440px;width:700px;'>
-            <div id='gmap_canvas' style='height:440px;width:700px;'>
+    <div id="grid">
+        <div id="pho" class="descrip">
+            <h2><b>Pho Lucky</b></h2>
+            <img src="pho.jpg" class="imageStandard">
+            <p>A nice very comfy vietnamese style restaurant that is renown for their authentic food.</p>
+            <h3>Hours:</h3>
+            <div class="hours">
+                <p>Monday: 11:00 am to 9:00 pm</p>
+                <p>Tuesday: 11:00 am to 3:00 pm</p>
+                <p>Wednesday: 11:00 am to 9:00 pm</p>
+                <p>Thursday: 11:00 am to 9:00 pm</p>
+                <p>Friday: 11:00 am to 10:00 pm</p>
+                <p>Saturday: 11:00 am to 10:00 pm</p>
+                <p>Sunday: 11:00 am to 9:00 pm</p>
             </div>
-            <div>
-                <small><a href="https://embedgooglemaps.com/fr/">embedgooglemaps FR</a></small>
-            </div>
-            <div>
-                <small><a href="https://ultimatewebtraffic.com/">Ultimate Webtraffic</a></small>
-            </div>
-            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
-            <script type='text/javascript'>
-                function init_map(){
-                    var myOptions = {zoom:13,center:new google.maps.LatLng(42.4712908,-83.43750669999997),mapTypeId: google.maps.MapTypeId.ROADMAP};
-                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                    marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.4712908,-83.43750669999997)});
-                    infowindow = new google.maps.InfoWindow({content:'<strong>Pho Lucky</strong><br>39777 Grand River Ave, Novi, MI 48375<br>'});
-                    google.maps.event.addListener(marker, 'click', function(){
+            <h3>Notable menu items:</h3>
+            <table>
+                <tr>
+                    <th>Phở Tái: </th>
+                    <th>$8.49</th>
+                </tr>
+                <tr>
+                    <th>Chả Giò: </th>
+                    <th>$8.49</th>
+                </tr>
+                <tr>
+                    <th>Spring rolls: </th>
+                    <th>$3.50</th>
+                </tr>
+            </table>
+            <h3>Location:</h3>
+            <!--Code for this was retreived from https://embedgooglemaps.com/en/-->
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='overflow:hidden;height:440px;width:450px;'>
+                <div id='gmap_canvas' style='height:440px;width:700px;'>
+                </div>
+                <div>
+                    <small><a href="https://embedgooglemaps.com/fr/">embedgooglemaps FR</a></small>
+                </div>
+                <div>
+                    <small><a href="https://ultimatewebtraffic.com/">Ultimate Webtraffic</a></small>
+                </div>
+                <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+                <script type='text/javascript'>
+                    function init_map(){
+                        var myOptions = {zoom:13,center:new google.maps.LatLng(42.4712908,-83.43750669999997),mapTypeId: google.maps.MapTypeId.ROADMAP};
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.4712908,-83.43750669999997)});
+                        infowindow = new google.maps.InfoWindow({content:'<strong>Pho Lucky</strong><br>39777 Grand River Ave, Novi, MI 48375<br>'});
+                        google.maps.event.addListener(marker, 'click', function(){
+                            infowindow.open(map,marker);
+                        });
                         infowindow.open(map,marker);
-                    });
-                    infowindow.open(map,marker);
-                }
-                google.maps.event.addDomListener(window, 'load', init_map);
-            </script>
-        <p><a href="http://www.pholucky.net/">Website</a></p>
-    </div>
-    <hr/>
-    <div id="bd">
-        <h2><b>bd's Mongolian Grill</b></h2>
-        <img src="bd.jpg" class="imageStandard">
-        <p>A nice bustiling restaruant with a create your own meal feature and a gong you can hit after you finish a meal!</p>
-        <h3>Hours:</h3>
-        <div class="hours">
-            <p>Monday: 11:00 am to 10:00 pm</p>
-            <p>Tuesday: 11:00 am to 10:00 pm</p>
-            <p>Wednesday: 11:00 am to 10:00 pm</p>
-            <p>Thursday: 11:00 am to 10:00 pm</p>
-            <p>Friday: 11:00 am to 11:00 pm</p>
-            <p>Saturday: 11:00 am to 11:00 pm</p>
-            <p>Sunday: 11:00 am to 10:00 pm</p>
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            <p><a href="http://www.pholucky.net/">Website</a></p>
         </div>
-        <h3>Notable menu items:</h3>
-        <table>
-            <tr>
-                <th>Unlimited Salad & Homemade Soup Bar: </th>
-                <th>$7.99</th>
-            </tr>
-            <tr>
-                <th>One Bowl + Unlimited Salad & Homemade Soup Bar: </th>
-                <th>$14.99</th>
-            </tr>
-            <tr>
-                <th>Unlimited Bowls of Stir-Fry + Unlimited Salad & Homemade Soup Bar: </th>
-                <th>$17.99</th>
-            </tr>
-        </table>
-        <h3>Location:</h3>
-       <address>43155 Main St Novi, MI 48375</address>
-        <p><a href="https://www.gomongo.com/stores/novi-mi/">Website</a></p>
-    </div>
-    <hr/>
-    <div id="turmerican">
-        <h2><b>Turmerican</b></h2>
-        <img src="tur.jpg" class="imageStandard">
-        <p>An authentic vegetarian indian restaurant that offers the sights, smells and taste to transport you straight to India.</p>
-        <h3>Hours:</h3>
-        <div class="hours">
-            <p>Monday: 11:30 am to 9:30 pm</p>
-            <p>Tuesday: 11:30 am to 9:30 pm</p>
-            <p>Wednesday: 11:30 am to 9:30 pm</p>
-            <p>Thursday: 11:30 am to 9:30 pm</p>
-            <p>Friday: 11:30 am to 9:30 pm</p>
-            <p>Saturday: 12:00 am to 9:30 pm</p>
-            <p>Sunday: 12:00 am to 9:30 pm</p>
+        <div id="bd" class="descrip">
+            <h2><b>bd's Mongolian Grill</b></h2>
+            <img src="bd.jpg" class="imageStandard">
+            <p>A nice bustiling restaruant with a create your own meal feature and a gong you can hit after you finish a meal!</p>
+            <h3>Hours:</h3>
+            <div class="hours">
+                <p>Monday: 11:00 am to 10:00 pm</p>
+                <p>Tuesday: 11:00 am to 10:00 pm</p>
+                <p>Wednesday: 11:00 am to 10:00 pm</p>
+                <p>Thursday: 11:00 am to 10:00 pm</p>
+                <p>Friday: 11:00 am to 11:00 pm</p>
+                <p>Saturday: 11:00 am to 11:00 pm</p>
+                <p>Sunday: 11:00 am to 10:00 pm</p>
+            </div>
+            <h3>Notable menu items:</h3>
+            <table>
+                <tr>
+                    <th>Unlimited Salad & Homemade Soup Bar: </th>
+                    <th>$7.99</th>
+                </tr>
+                <tr>
+                    <th>One Bowl + Unlimited Salad & Homemade Soup Bar: </th>
+                    <th>$14.99</th>
+                </tr>
+                <tr>
+                    <th>Unlimited Bowls of Stir-Fry + Unlimited Salad & Homemade Soup Bar: </th>
+                    <th>$17.99</th>
+                </tr>
+            </table>
+            <h3>Location:</h3>
+        <address>43155 Main St Novi, MI 48375</address>
+            <p><a href="https://www.gomongo.com/stores/novi-mi/">Website</a></p>
         </div>
-        <h3>Notable menu items:</h3>
-        <table>
-            <tr>
-                <th>Paneer Tikka Masala: </th>
-                <th>$11.00</th>
-            </tr>
-            <tr>
-                <th>Veg Cutlet: </th>
-                <th>$6.00</th>
-            </tr>
-            <tr>
-                <th>Chilli Parota: </th>
-                <th>$9.50</th>
-            </tr>
-        </table>
-        <h3>Location:</h3>
-       <address>24259 Novi Rd, Novi, MI 48375</address>
-        <p><a href="http://www.turmerican.com/">Website</a></p>
-    </div>
-    <hr/>
-    <div id="cafe">
-        <h2><b>China Cafe</b></h2>
-        <img src="cafe.jpeg" class="imageStandard">
-        <p>A homey americanized chinese restaruant filled with high class food and great conversations!</p>
-        <h3>Hours:</h3>
-        <div class="hours">
-            <p>Monday: Closed</p>
-            <p>Tuesday: 11:00 am to 9:30 pm</p>
-            <p>Wednesday: 11:00 am to 9:30 pm</p>
-            <p>Thursday: 11:00 am to 9:30 pm</p>
-            <p>Friday: 11:30 am to 10:30 pm</p>
-            <p>Saturday: 4:00 pm to 10:30 pm</p>
-            <p>Sunday: 4:00 pm to 9:00 pm</p>
+        <div id="turmerican" class="descrip">
+            <h2><b>Turmerican</b></h2>
+            <img src="tur.jpg" class="imageStandard">
+            <p>An authentic vegetarian indian restaurant that offers the sights, smells and taste to transport you straight to India.</p>
+            <h3>Hours:</h3>
+            <div class="hours">
+                <p>Monday: 11:30 am to 9:30 pm</p>
+                <p>Tuesday: 11:30 am to 9:30 pm</p>
+                <p>Wednesday: 11:30 am to 9:30 pm</p>
+                <p>Thursday: 11:30 am to 9:30 pm</p>
+                <p>Friday: 11:30 am to 9:30 pm</p>
+                <p>Saturday: 12:00 am to 9:30 pm</p>
+                <p>Sunday: 12:00 am to 9:30 pm</p>
+            </div>
+            <h3>Notable menu items:</h3>
+            <table>
+                <tr>
+                    <th>Paneer Tikka Masala: </th>
+                    <th>$11.00</th>
+                </tr>
+                <tr>
+                    <th>Veg Cutlet: </th>
+                    <th>$6.00</th>
+                </tr>
+                <tr>
+                    <th>Chilli Parota: </th>
+                    <th>$9.50</th>
+                </tr>
+            </table>
+            <h3>Location:</h3>
+        <address>24259 Novi Rd, Novi, MI 48375</address>
+            <p><a href="http://www.turmerican.com/">Website</a></p>
         </div>
-        <h3>Notable menu items:</h3>
-        <table>
-            <tr>
-                <th>Palace Prawns: </th>
-                <th>$27.00</th>
-            </tr>
-            <tr>
-                <th>Thai Basil Trio: </th>
-                <th>$17.00</th>
-            </tr>
-            <tr>
-                <th>Three Wonders: </th>
-                <th>$16.00</th>
-            </tr>
-        </table>
-        <h3>Location:</h3>
-       <address>24299 Novi Rd, Novi, MI 48375</address>
-        <p><a href="https://www.chinacafenovi.com/">Website</a></p>
+        <div id="cafe" class="descrip">
+            <h2><b>China Cafe</b></h2>
+            <img src="cafe.jpeg" class="imageStandard">
+            <p>A homey americanized chinese restaruant filled with high class food and great conversations!</p>
+            <h3>Hours:</h3>
+            <div class="hours">
+                <p>Monday: Closed</p>
+                <p>Tuesday: 11:00 am to 9:30 pm</p>
+                <p>Wednesday: 11:00 am to 9:30 pm</p>
+                <p>Thursday: 11:00 am to 9:30 pm</p>
+                <p>Friday: 11:30 am to 10:30 pm</p>
+                <p>Saturday: 4:00 pm to 10:30 pm</p>
+                <p>Sunday: 4:00 pm to 9:00 pm</p>
+            </div>
+            <h3>Notable menu items:</h3>
+            <table>
+                <tr>
+                    <th>Palace Prawns: </th>
+                    <th>$27.00</th>
+                </tr>
+                <tr>
+                    <th>Thai Basil Trio: </th>
+                    <th>$17.00</th>
+                </tr>
+                <tr>
+                    <th>Three Wonders: </th>
+                    <th>$16.00</th>
+                </tr>
+            </table>
+            <h3>Location:</h3>
+        <address>24299 Novi Rd, Novi, MI 48375</address>
+            <p><a href="https://www.chinacafenovi.com/">Website</a></p>
+        </div>
     </div>
-    <hr/>
 
     <!--Form does not lead anywhere but this is the basic idea-->
     <div id="exp">
